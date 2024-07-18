@@ -10,15 +10,14 @@ los números del 1 al número que indique el usuario
 123456
 */
 
-// Solicitar al usuario un número
+
 let numero = parseInt(prompt("Introduce un número (no mayor de 50):"));
 
-// Verificar que el número esté en el rango permitido
 if (numero > 0 && numero <= 50) {
-    // Generar la pirámide ascendente
-    for (let i = 1; i <= numero; i++) {
-        for (let j = 1; j <= i; j++) {
-            document.write(j);
+    
+    for (let num1 = 1; num1 <= numero; num1++) {
+        for (let num2 = 1; num2 <= num1; num2++) {
+            document.write(num2);
         }
         document.write("<br>");
     }

@@ -12,15 +12,12 @@ de la siguiente forma : (suponiendo que indica 30).
 
 */
 
-// Solicitar al usuario un número
-let numero = parseInt(prompt("Introduce un número (no mayor de 50):"));
+const numero = parseInt(prompt("Introduce un número (no mayor de 50):"));
 
-// Verificar que el número esté en el rango permitido
 if (numero > 0 && numero <= 50) {
-    // Generar la pirámide inversa
-    for (let i = numero; i >= 1; i--) {
-        for (let j = 0; j < i; j++) {
-            document.write(i);
+    for (let inversa = numero; inversa >= 1; inversa--) {
+        for (let aumenta = 0; aumenta < inversa; aumenta++) {
+            document.write(inversa);
         }
         document.write("<br>");
     }
